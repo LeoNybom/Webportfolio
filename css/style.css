@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding:0;
   line-height: 1.6;  
-  background-color: green;
+  background-color: rgba(12, 32, 25);
 }
 img {
   max-width: 100%;
@@ -168,7 +168,10 @@ p {
 .headerdiv{
   display: flex;
   justify-content: space-between;
-  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 1%;
 }
 .project-card{
   display: flex;
@@ -192,7 +195,16 @@ p {
   font-family: "Electrolize";
   color: white;
   font-size: 1.5em;
-  margin-left: 10%;
+}
+.project-button{
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  font-family: "Electrolize";
+}
+.project-button a{
+  text-decoration: none;
+  color: rgba(72, 255, 0, 0.8);
 }
 .project-card>.projectitem{
   backdrop-filter: blur(10px);
