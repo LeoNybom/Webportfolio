@@ -158,57 +158,103 @@ p {
     text-shadow: 0 0 10px rgba(72, 255, 0, 0.2), 0 0 20px rgba(72, 255, 0, 0.2), 0 0 30px rgba(72, 255, 0, 0.2), 0 0 40px rgba(72, 255, 0, 0.2), 0 0 50px rgba(72, 255, 0, 0.2), 0 0 60px rgba(72, 255, 0, 0.2), 0 0 70px rgba(72, 255, 0, 0.2);
 }
 /* PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS*/
+#projects{
+  scroll-margin-top: 60px;
+}
 .projectcontainer{
-  height: 50vh;
-  background-color: rgba(12, 32, 25);
+  min-height: 100vh;
+  padding: 8rem 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .headerdiv{
   display: flex;
   justify-content: space-between;
-  margin-left: 10%;
-  width: 80%;
-  margin-top: 8%;
-  margin-bottom: 1%;
+  align-items: flex-end;
 }
 .project-card{
   display: flex;
-  justify-content: space-evenly;
-  
-  width: 80%;
-  height: 80%;
-  margin-left: 10%;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
   text-align: center;
-
-  backdrop-filter: blur(10px);
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  
--webkit-backdrop-filter
-: blur( 10px );
-  border-radius: 3px;
-  border: 1px solid rgba(72, 255, 0, 0.349);
 }
 .project-header{
-  font-size: 1.5em;
+  font-size: 3rem;
+  font-weight: 400;
 }
 .project-button{
-  background-color: transparent;
-  border: 0;
+  background: transparent;
+  border: none;
   font-size: 1rem;
   font-family: "Electrolize";
+  cursor: pointer;
 }
 .project-button a{
   text-decoration: none;
-  color: rgba(72, 255, 0, 0.8);
+  color: rgba(72,255,0,0.8);
+  transition: 0.3s;
 }
-.project-card>.projectitem{
+.project-button a:hover{
+  text-shadow: 0 0 10px rgba(72,255,0,0.7);
+}
+.projectitem{
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(72,255,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.4s ease;
   backdrop-filter: blur(10px);
-    background: rgba(255, 0, 0, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 50%;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+.projectitem:hover{
+  transform: translateY(-8px);
+  border: 1px solid rgba(72,255,0,0.5);
+  box-shadow:
+    0 0 20px rgba(72,255,0,0.15),
+    0 0 40px rgba(72,255,0,0.08);
+}
+.projectitem img{
+  width: 100%;
+  height: 220px;
+  object-fit:fill;
 
-    -webkit-backdrop-filter: blur( 10px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 80%;
-    margin-top: 4%;
+  border-bottom: 1px solid rgba(72,255,0,0.15);
+}
+.project-content{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.project-content p{
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.5rem;
+}
+.project-category{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-top: auto;
+  margin-left: 10px;
+  padding-bottom: 25px;
+}
+.project-category i{
+  font-style: normal;
+  padding: 6px 12px;
+  border: 1px solid rgba(72,255,0,0.35);
+  border-radius: 5px;
+  color: rgba(72,255,0,0.9);
+  font-size: 0.8rem;
+}
+.git-button{
+  display: flex;
+  margin-left: 70%;
 }
