@@ -120,7 +120,7 @@ p {
 
   backdrop-filter: blur(10px);
   background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(72,255,0,0.1);
   
 -webkit-backdrop-filter
 : blur( 10px );
@@ -180,7 +180,7 @@ p {
   width: 100%;
   text-align: center;
 }
-.project-header{
+.sectionheader{
   font-size: 3rem;
   font-weight: 400;
 }
@@ -266,4 +266,24 @@ p {
 .ommigsection{
 min-height: 100vh;
 border: 2px solid white;
+}
+.ommigsection>.sectionheader{
+margin-left: 5%;
+}
+.ommig-content{
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-evenly;
+}
+.ommig-item{
+  width: 40%;
+  height: 100px;
+}
+.ommig-item h3{
+  color: rgba(72,255,0,0.9);
+  font-size: 1rem;
+}
+.ommig-item p{
+  font-size: 2rem;
+  
 }
