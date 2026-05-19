@@ -9,6 +9,8 @@ body {
   padding:0;
   line-height: 1.6;  
   background-color: rgba(12, 32, 25);
+  font-family: "Electrolize";
+  color: white;
 }
 img {
   max-width: 100%;
@@ -33,7 +35,7 @@ p {
     position: fixed;
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 8px 32px 0 rgba(72, 255, 0, 0.4);
+    box-shadow: 0 8px 32px  rgba(72, 255, 0, 0.4);
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -48,7 +50,6 @@ p {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-    font-family: "Electrolize";
 }
 .navbar li:first-child {
     margin-right: auto;
@@ -58,12 +59,13 @@ p {
 }
 /* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO */
 .hero{
- background-image: url(/images/webbport-hero.png);
+  background-image: url(/images/webbport-hero.png);
   background-size: cover;
   background-position: center;
 
   height: 100vh;
   padding-top: 60px;
+  box-shadow: 0 8px 32px 0 rgba(72, 255, 0, 0.4);
 }
 .main-card{
   width: 100%;
@@ -87,9 +89,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  color: white;
-  font-family: "Electrolize";
 }
 .hero-image img{
   width: 25rem;
@@ -104,7 +103,6 @@ p {
 }
 .button{
   padding: 12px 28px;
-  color: white;
   background: green;
   border-radius: 5px;
   position: relative;
@@ -163,7 +161,6 @@ p {
 .projectcontainer{
   height: 50vh;
   background-color: rgba(12, 32, 25);
-  border-bottom: 10px solid white;
 }
 .headerdiv{
   display: flex;
@@ -192,8 +189,6 @@ p {
   border: 1px solid rgba(72, 255, 0, 0.349);
 }
 .project-header{
-  font-family: "Electrolize";
-  color: white;
   font-size: 1.5em;
 }
 .project-button{
