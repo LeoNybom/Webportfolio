@@ -163,7 +163,7 @@ p {
 }
 .projectcontainer{
   min-height: 100vh;
-  padding: 8rem 10%;
+  padding: 6rem 5%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -231,6 +231,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  height: 35%;
 }
 .project-content p{
   color: rgba(255,255,255,0.7);
@@ -257,4 +258,12 @@ p {
 .git-button{
   display: flex;
   margin-left: 70%;
+}
+/* OM MIG OM MIG OM MIG OM MIG OM MIG OM MIG OM MIG OM MIG OM MIG*/
+#ommig{
+  scroll-margin-top: 60px;
+}
+.ommigsection{
+min-height: 100vh;
+border: 2px solid white;
 }
