@@ -26,6 +26,7 @@ p {
   margin: 0;
   padding:0;
 }
+
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR*/
 .navbar>.navlist{
     width:100%;
@@ -57,6 +58,7 @@ p {
 .navbar li:hover {
     text-shadow: 0 0 10px rgba(72, 255, 0, 0.5), 0 0 20px rgba(72, 255, 0, 0.5), 0 0 30px rgba(72, 255, 0, 0.5), 0 0 40px rgba(72, 255, 0, 0.5), 0 0 50px rgba(72, 255, 0, 0.5), 0 0 60px rgba(72, 255, 0, 0.5), 0 0 70px rgba(72, 255, 0, 0.5);
 }
+
 /* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO */
 .hero{
   background-image: url(/images/webbport-hero.png);
@@ -157,6 +159,7 @@ p {
 .herosocials li:hover {
     text-shadow: 0 0 10px rgba(72, 255, 0, 0.2), 0 0 20px rgba(72, 255, 0, 0.2), 0 0 30px rgba(72, 255, 0, 0.2), 0 0 40px rgba(72, 255, 0, 0.2), 0 0 50px rgba(72, 255, 0, 0.2), 0 0 60px rgba(72, 255, 0, 0.2), 0 0 70px rgba(72, 255, 0, 0.2);
 }
+
 /* PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS*/
 #projects{
   scroll-margin-top: 60px;
@@ -264,7 +267,7 @@ p {
   scroll-margin-top: 60px;
 }
 .ommigsection{
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 6rem 5%;
   display: flex;
   flex-direction: column;
@@ -329,4 +332,54 @@ p {
 }
 .ommig-left>.button{
   margin-left: 10%;
+}
+
+/* KUNSKAP KUNSKAP KUNSKAP KUNSKAP KUNSKAP KUNSKAP KUNSKAP KUNSKAP */
+#kunskap{
+  scroll-margin-top: 200px;
+}
+.kunskapsection{
+  background-color: rgba(0, 71, 0, 0.685);
+  text-align: center;
+  height: 60vh;
+  min-height: 50vh;
+  border-bottom: 2px solid rgba(72,255,0,0.2);
+}
+.kunskap-banner{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  gap: 80px;
+}
+.kunskap-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+}
+.kunskap-item img{
+  object-fit: contain;
+  height: 260px;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+.item-text{
+  margin-top: 1rem;
+  text-align: center;
+}
+.kunskap-item img:hover{
+  transform: scale(1.5);
+}
+.item-text h3{
+  font-size: 2rem;
+}
+.item-text p{
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
