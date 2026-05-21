@@ -63,7 +63,7 @@
                         <a href="/files/Resumé - Leopold Hedefalk Nybom.pdf" download>Ladda ner CV</a>                        
                     </button>
                 </div>
-                <div class="herosocials">
+                <div class="socials">
                     <ul>
                         <li><a href="https://github.com/LeoNybom" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/leonybom/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -185,7 +185,7 @@
 <!-- REFERENSER REFERENSER REFERENSER REFERENSER REFERENSER REFERENSER -->
 
     <div class="referenssection" id="referenser">
-        <h2 class="sectionheader">Referenser</h2>
+        <h2 class="sectionheader">Detta har sagst om mig</h2>
         <div class="slideshow-container">
             <div class="mySlides">
                 <q>Fan va bra han ÄÄÄÄÄÄR</q>
@@ -214,11 +214,53 @@
 
 <!-- KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT -->
 
-    <div class="contaktsection" id="kontakt">
-        <h2 class="sectionheader">Kontakt</h2>
-        <div>
-            mail funktion
-            <button class="button">Ladda ner CV</button>
+    <div class="contactsection" id="kontakt">
+        <div class="kontakt-socials">
+            <div class="kontakt-text">
+                <h3>Vi håller kontakten!</h3>
+                <p>Har du ett projekt i åtanke, eller vill bara säga hej? Tveka inte på att höra av dig.</p>
+            </div>
+            <div class="socials">
+                <ul>
+                        <li><a href="https://github.com/LeoNybom" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/leonybom/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/LeoNybom" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://discord.com/users/540577460148764692" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="kontakt-container">
+            <form action="https://formsubmit.co/2e27cdcfe8f415d340d38e98111ec77d"method="POST">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html"/>
+
+                <div class="input-container">
+                    <div class="input-item">    
+                        <input
+                        type="text"
+                        id="name"
+                        name="Namn"
+                        required
+                        minlength="2"
+                        pattern="[A-Za-zÅÄÖåäö\- ]+"
+                        placeholder="Namn"/>
+                    </div>
+                    <div class="input-item">
+                        <input
+                        type="email"
+                        id="email"
+                        name="E-post"
+                        required
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                        placeholder="Email"/>
+                    </div>
+                </div>
+                <textarea name="meddelande" rows="20" cols="50" placeholder="Meddelande"></textarea>
+
+                <button class="button"type="submit" onclick="alert('Meddelande skickat!')">Skicka meddelande</button>
+
+            </form>
         </div>        
     </div>
 
