@@ -4,13 +4,18 @@ sumbitBtn.addEventListener('click', function(e){
   e.preventDefault();
 
   Swal.fire({
-    title: 'Meddelande skickat!',
-    text: 'Tack för ditt meddelande.',
-    icon: 'success'
-    }).then(() => {
-    document.querySelector('form').submit();
-  });
-});
+  title: 'Meddelande skickat!',
+  text: 'Tack för ditt meddelande.',
+  icon: 'success',
+  customClass: {
+    container: 'my-alert-container',
+    popup: 'my-alert-popup',
+    title: 'my-alert-title',
+    htmlContainer: 'my-alert-text'
+  }
+}).then(() => {
+  document.querySelector('form').submit();
+})});
 
 var slideIndex = 1;
 showSlides(slideIndex);

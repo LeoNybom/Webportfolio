@@ -583,6 +583,34 @@ textarea::placeholder{
   padding: 0 30px;
   color: white;
 }
+.my-alert-popup {
+  background-color: rgba(12, 32, 25, 0.95);
+  border-radius: 15px;
+  border: 2px solid rgba(72, 255, 0, 0.6);
+  box-shadow: 0 0 20px rgba(72, 255, 0, 0.5), 0 0 40px rgba(72, 255, 0, 0.2);
+}
+.my-alert-title {
+  color: #48ff00;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(72, 255, 0, 0.8);
+}
+.my-alert-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+.swal2-confirm {
+  background-color: rgba(72, 255, 0, 0.8) !important;
+  color: #0c2019 !important;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 15px rgba(72, 255, 0, 0.5);
+}
+.swal2-confirm:hover {
+  background-color: rgba(72, 255, 0, 1) !important;
+  box-shadow: 0 0 30px rgba(72, 255, 0, 0.8);
+}
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
