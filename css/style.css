@@ -26,6 +26,9 @@ p {
   margin: 0;
   padding:0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR*/
 .navbar>.navlist{
@@ -483,6 +486,9 @@ q {
   text-align: center;
 }
 /* KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT */
+#kontakt{
+  scroll-margin-top: 200px;
+}
 .contactsection{
   min-height: 60vh;
   padding: 8rem 8%;
@@ -576,4 +582,26 @@ textarea::placeholder{
   margin-top: 10px;
   padding: 0 30px;
   color: white;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.footer{
+  background-color: rgb(3, 3, 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-nav ul{
+  list-style-type: none;
+}
+.footer-nav a{
+  color: rgba(72, 255, 0, 0.8);
+    text-decoration: none;
+}
+.footer-nav li:hover{
+  transition: 0.2s ease;
+  transform: scale(1.2);
 }

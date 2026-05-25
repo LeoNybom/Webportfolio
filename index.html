@@ -13,6 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Electrolize&family=Jim+Nightshade&family=New+Rocker&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.min.css
+    " rel="stylesheet">
     
     <link rel="stylesheet" href="/css/style.css">
 
@@ -26,7 +33,7 @@
     <div class="navbar">        
         <ul class="navlist">
             <li>
-                <a href="index.html" class="homebutton">LHN</a>
+                <a href="#home" class="homebutton">LHN</a>
             </li>
             <li>
                 <a href="#projects">Projekt</a>
@@ -48,7 +55,7 @@
 
 <!-- HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO-->
 
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="main-card">
             <div class="hero-left">
                 <div class="hero-text">
@@ -232,8 +239,8 @@
         <div class="kontakt-container">
             <form action="https://formsubmit.co/2e27cdcfe8f415d340d38e98111ec77d"method="POST">
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html"/>
+                <!-- <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html"/> -->
 
                 <div class="input-container">
                     <div class="input-item">    
@@ -258,7 +265,7 @@
                 </div>
                 <textarea name="meddelande" rows="20" cols="50" placeholder="Meddelande"></textarea>
 
-                <button class="button"type="submit" onclick="alert('Meddelande skickat!')">Skicka meddelande</button>
+                <button class="button"type="submit">Skicka meddelande</button>
 
             </form>
         </div>        
@@ -267,7 +274,38 @@
 <!-- FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER-->
 
     <div class="footer">
-        footer
+        <div class="footer-left">
+            <h3>Leopold Hedefalk Nybom</h3>            
+        </div>
+        <div class="footer-mid">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#home">Hem</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projekt</a>
+                    </li>
+                    <li>
+                        <a href="#ommig">Om mig</a>
+                    </li>
+                    <li>
+                        <a href="#kunskap">Kunskap</a>
+                    </li>
+                    <li>
+                        <a href="#referenser">Referenser</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>           
+        </div>
+        <div class="footer-right">
+            <button class="button">
+                        <a href="/files/Resumé - Leopold Hedefalk Nybom.pdf" download>Ladda ner CV</a>                        
+            </button>
+        </div>
     </div>
 </div>
 

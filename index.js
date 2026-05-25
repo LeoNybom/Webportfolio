@@ -1,3 +1,17 @@
+const sumbitBtn = document.querySelector('button[type="submit"]');
+
+sumbitBtn.addEventListener('click', function(e){
+  e.preventDefault();
+
+  Swal.fire({
+    title: 'Meddelande skickat!',
+    text: 'Tack för ditt meddelande.',
+    icon: 'success'
+    }).then(() => {
+    document.querySelector('form').submit();
+  });
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
