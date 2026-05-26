@@ -1,7 +1,7 @@
-const sumbitBtn = document.querySelector('button[type="submit"]');
+const submitBtn = document.querySelector('button[type="submit"]');
 const form = document.querySelector('form');
 
-sumbitBtn.addEventListener('click', function(e){
+submitBtn.addEventListener('click', function(e){
   e.preventDefault();
 
   if (!form.checkValidity()) {

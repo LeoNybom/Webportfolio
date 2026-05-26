@@ -1,0 +1,30 @@
+.navbar>.navlist{
+    width:100%;
+    height: 60px;
+    margin-top: 0;
+    list-style-type: none;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 32px  rgba(72, 255, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.navbar li{
+    float: left;
+    display: flex;
+    text-align: center;
+    padding: 1%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.navbar li:first-child {
+    margin-right: auto;
+}
+.navbar li:hover {
+    text-shadow: 0 0 10px rgba(72, 255, 0, 0.5), 0 0 20px rgba(72, 255, 0, 0.5), 0 0 30px rgba(72, 255, 0, 0.5), 0 0 40px rgba(72, 255, 0, 0.5), 0 0 50px rgba(72, 255, 0, 0.5), 0 0 60px rgba(72, 255, 0, 0.5), 0 0 70px rgba(72, 255, 0, 0.5);
+}

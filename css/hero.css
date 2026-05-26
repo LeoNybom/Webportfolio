@@ -1,0 +1,99 @@
+.hero{
+  background-image: url(/images/webbport-hero.png);
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  padding-top: 60px;
+  box-shadow: 0 8px 32px 0 rgba(72, 255, 0, 0.4);
+}
+.main-card{
+  width: 100%;
+  height: calc(100vh - 60px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 150px;
+
+  width: 100%;
+  height: calc(100vh - 60px);
+
+  padding: 0 10%;
+}
+.hero-text{
+  font-size: 150%;
+}
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-image img{
+  width: 25rem;
+  border-radius: 50%;
+  margin-right: 30%;
+
+  border: 3px solid rgba(72, 255, 0, 0.5);
+
+  box-shadow:
+    0 0 20px rgba(72, 255, 0, 0.4),
+    0 0 40px rgba(72, 255, 0, 0.2);
+}
+.button{
+  padding: 12px 28px;
+  background: green;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: .4s;
+  width: 20rem;
+  margin-top: 20px;
+  font-family: "Electrolize";
+  font-size: 1rem;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(10px);
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba(72,255,0,0.1);
+  
+-webkit-backdrop-filter
+: blur( 10px );
+  border-radius: 3px;
+  border: 1px solid rgba(72, 255, 0, 0.349);
+}
+.button a{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover{
+  background-color: green;
+}
+.cta{
+  text-align: center;
+  width: 20rem;
+}
+.socials li{
+    float: left;
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+}
+.socials a{
+    color: rgba(72, 255, 0, 0.8);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.socials li:hover {
+    text-shadow: 0 0 10px rgba(72, 255, 0, 0.2), 0 0 20px rgba(72, 255, 0, 0.2), 0 0 30px rgba(72, 255, 0, 0.2), 0 0 40px rgba(72, 255, 0, 0.2), 0 0 50px rgba(72, 255, 0, 0.2), 0 0 60px rgba(72, 255, 0, 0.2), 0 0 70px rgba(72, 255, 0, 0.2);
+}

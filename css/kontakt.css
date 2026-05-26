@@ -1,0 +1,125 @@
+#kontakt{
+  scroll-margin-top: 200px;
+}
+.contactsection{
+  min-height: 60vh;
+  padding: 8rem 8%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  border-bottom: 2px solid rgba(72,255,0,0.2);
+}
+.kontakt-socials{
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.kontakt-text h3{
+  font-size: 4rem;
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+.kontakt-text p{
+  color: rgba(255,255,255,0.7);
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  max-width: 450px;
+}
+
+.kontakt-container{
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+.kontakt-container form{
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.input-container{
+  display: flex;
+  gap: 20px;
+}
+.input-item{
+  flex: 1;
+}
+.input-item input,
+textarea{
+  width: 100%;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: "Electrolize";
+  outline: none;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+.input-item input{
+  height: 60px;
+}
+textarea{
+  resize: none;
+  max-height: 180px;
+}
+.input-item input:focus,
+textarea:focus{
+  border: 1px solid rgba(72,255,0,0.7);
+
+  box-shadow:
+    0 0 10px rgba(72,255,0,0.15),
+    0 0 20px rgba(72,255,0,0.08);
+}
+.input-item input::placeholder,
+textarea::placeholder{
+  color: rgba(255,255,255,0.45);
+}
+.kontakt-container .button{
+  width: 260px;
+  height: 60px;
+  margin-top: 10px;
+  padding: 0 30px;
+  color: white;
+}
+.my-alert-popup {
+  background-color: rgba(12, 32, 25, 0.95);
+  border-radius: 15px;
+  border: 2px solid rgba(72, 255, 0, 0.6);
+  box-shadow: 0 0 20px rgba(72, 255, 0, 0.5), 0 0 40px rgba(72, 255, 0, 0.2);
+}
+.my-alert-title {
+  color: #48ff00;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(72, 255, 0, 0.8);
+}
+.my-alert-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+.swal2-confirm {
+  background-color: rgba(72, 255, 0, 0.8) !important;
+  color: #0c2019 !important;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 15px rgba(72, 255, 0, 0.5);
+}
+.swal2-confirm:hover {
+  background-color: rgba(72, 255, 0, 1) !important;
+  box-shadow: 0 0 30px rgba(72, 255, 0, 0.8);
+}

@@ -1,0 +1,47 @@
+#kunskap{
+  scroll-margin-top: 200px;
+}
+.kunskapsection{
+  text-align: center;
+  height: 60vh;
+  min-height: 50vh;
+  border-bottom: 2px solid rgba(72,255,0,0.2);
+}
+.kunskap-banner{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  gap: 80px;
+}
+.kunskap-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+}
+.kunskap-item img{
+  object-fit: contain;
+  height: 260px;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+.item-text{
+  margin-top: 1rem;
+  text-align: center;
+}
+.kunskap-item img:hover{
+  transform: scale(1.5);
+}
+.item-text h3{
+  font-size: 2rem;
+}
+.item-text p{
+  font-size: 1.2rem;
+  opacity: 0.8;
+}

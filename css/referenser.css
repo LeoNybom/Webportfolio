@@ -1,0 +1,92 @@
+#referenser{
+  scroll-margin-top: 100px;
+}
+.referenssection{
+  min-height: 60vh;
+  padding: 6rem 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 2px solid rgba(72,255,0,0.2);
+  border-bottom: 2px solid rgba(72,255,0,0.2);
+  background-color: rgba(0, 71, 0, 0.685);
+}
+.referenssection> .sectionheader{
+  text-align: center;
+}
+.slideshow-container {
+  position: relative;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(72,255,0,0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  transition: 0.4s ease;
+}
+.slideshow-container:hover {
+  border: 1px solid rgba(72,255,0,0.5);
+  box-shadow:
+    0 0 20px rgba(72,255,0,0.15),
+    0 0 40px rgba(72,255,0,0.08);
+}
+.mySlides {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgba(72, 255, 0, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.next {
+  position: absolute;
+  right: 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(72, 255, 0, 1);
+}
+.dot-container {
+  text-align: center;
+  padding: 1.5rem;
+  background: transparent;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgba(72, 255, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: rgba(72, 255, 0, 0.8);
+}
+q {
+  font-style: italic;
+  color: white;
+}
+.author {
+  color: rgba(72, 255, 0, 0.9);
+  margin-top: 1rem;
+}
+.authortitle{
+  color: grey;
+  font-size: 0.9rem;
+  text-align: center;
+}

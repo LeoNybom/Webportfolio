@@ -1,0 +1,101 @@
+#projects{
+  scroll-margin-top: 60px;
+}
+.projectcontainer{
+  min-height: 100vh;
+  padding: 6rem 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.headerdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.project-card{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+.sectionheader{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.project-button{
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: "Electrolize";
+  cursor: pointer;
+}
+.project-button a{
+  text-decoration: none;
+  color: rgba(72,255,0,0.8);
+  transition: 0.3s;
+}
+.project-button a:hover{
+  text-shadow: 0 0 10px rgba(72,255,0,0.7);
+}
+.projectitem{
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(72,255,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  backdrop-filter: blur(10px);
+  width: 50%;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+.projectitem:hover{
+  transform: translateY(-8px);
+  border: 1px solid rgba(72,255,0,0.5);
+  box-shadow:
+    0 0 20px rgba(72,255,0,0.15),
+    0 0 40px rgba(72,255,0,0.08);
+}
+.projectitem img{
+  width: 100%;
+  height: 220px;
+  object-fit:fill;
+
+  border-bottom: 1px solid rgba(72,255,0,0.15);
+}
+.project-content{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 35%;
+}
+.project-content p{
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.5rem;
+}
+.project-category{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-top: auto;
+  margin-left: 10px;
+  padding-bottom: 25px;
+}
+.project-category i{
+  font-style: normal;
+  padding: 6px 12px;
+  border: 1px solid rgba(72,255,0,0.35);
+  border-radius: 5px;
+  color: rgba(72,255,0,0.9);
+  font-size: 0.8rem;
+}
+.git-button{
+  display: flex;
+  margin-left: 70%;
+}
