@@ -36,3 +36,25 @@ section{
   width: 100%;
   overflow-x: hidden;
 }
+
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+
+@media (max-width: 1199px) {
+  body {
+    font-size: 14px;
+  }
+  .sectionheader {
+    font-size: 2.5rem;
+  }
+}
+
+/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 13px;
+  }
+  .sectionheader {
+    font-size: 1.8rem;
+  }
+}

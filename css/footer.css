@@ -17,3 +17,39 @@
   transition: 0.2s ease;
   transform: scale(1.2);
 }
+/* TABLET TABLET TABLET TABLET */
+
+@media (max-width: 1199px) {
+  .footer {
+    gap: 20px;
+    padding: 30px 5%;
+  }
+  .footer-nav ul {
+    gap: 10px;
+  }
+}
+
+/* MOBILE MOBILE MOBILE MOBILE */
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 5%;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-mid,
+  .footer-right {
+    width: 100%;
+  }
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-right .button {
+    width: 100%;
+  }
+}

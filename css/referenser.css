@@ -90,3 +90,41 @@ q {
   font-size: 0.9rem;
   text-align: center;
 }
+
+/* TABLET TABLET TABLET TABLET */
+@media (max-width: 1199px) {
+  .referenssection {
+    padding: 4rem 5%;
+  }
+  .slideshow-container {
+    padding: 2rem;
+  }
+  .mySlides {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+}
+
+/* MOBILE MOBILE MOBILE MOBILE */
+@media (max-width: 767px) {
+  .referenssection {
+    padding: 3rem 5%;
+  }
+  .slideshow-container {
+    padding: 1.5rem;
+  }
+  .mySlides {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .prev, .next {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: -20px;
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+  }
+}
