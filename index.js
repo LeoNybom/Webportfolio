@@ -1,21 +1,54 @@
 const sumbitBtn = document.querySelector('button[type="submit"]');
+const form = document.querySelector('form');
 
 sumbitBtn.addEventListener('click', function(e){
   e.preventDefault();
 
-  Swal.fire({
-  title: 'Meddelande skickat!',
-  text: 'Tack för ditt meddelande.',
-  icon: 'success',
-  customClass: {
-    container: 'my-alert-container',
-    popup: 'my-alert-popup',
-    title: 'my-alert-title',
-    htmlContainer: 'my-alert-text'
+  if (!form.checkValidity()) {
+      Swal.fire({
+        title: 'Valideringsfel!',
+        text: 'Vänligen fyll i alla fält korrekt.',
+        icon: 'error',
+        customClass: {
+          popup: 'my-alert-popup',
+          title: 'my-alert-title',
+          htmlContainer: 'my-alert-text'
+        }
+      });
+      return;
   }
-}).then(() => {
-  document.querySelector('form').submit();
-})});
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    Swal.fire({
+      title: 'Meddelande skickat!',
+      text: 'Tack för ditt meddelande.',
+      icon: 'success',
+      customClass: {
+        popup: 'my-alert-popup',
+        title: 'my-alert-title',
+        htmlContainer: 'my-alert-text'
+      }
+    });
+    form.reset();
+  })
+  .catch(error => {
+    Swal.fire({
+      title: 'Fel!',
+      text: 'Det uppstod ett fel när meddelandet skickades.',
+      icon: 'error',
+      customClass: {
+        popup: 'my-alert-popup',
+        title: 'my-alert-title'
+      }
+    });
+  });
+});
 
 var slideIndex = 1;
 showSlides(slideIndex);
