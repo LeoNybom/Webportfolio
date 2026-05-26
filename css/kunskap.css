@@ -3,8 +3,8 @@
 }
 .kunskapsection{
   text-align: center;
-  height: 60vh;
-  min-height: 50vh;
+  min-height: 60vh;
+  padding: 6rem 1.5rem;
   border-bottom: 2px solid rgba(72,255,0,0.2);
 }
 .kunskap-banner{
@@ -44,4 +44,45 @@
 .item-text p{
   font-size: 1.2rem;
   opacity: 0.8;
+}
+
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET*/
+@media (max-width: 1199px) {
+  .kunskap-banner {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+
+@media (max-width: 767px) {
+  .kunskapsection {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 5%;
+  }
+  .kunskap-banner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 2rem;
+  }
+  .kunskap-item {
+    width: calc(50% - 8px);
+    max-width: none;
+  }
+  .kunskap-item img {
+    height: 120px;
+  }
+  .item-text h3 {
+    font-size: 1.2rem;
+  }
+  .item-text p {
+    font-size: 0.8rem;
+  }
+  .sectionheader {
+    font-size: 1.8rem;
+  }
 }
