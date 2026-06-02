@@ -128,7 +128,7 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: 100dvh;
+    min-height: 70dvh;
     padding-top: 60px;
   }
   .main-card {
@@ -140,6 +140,7 @@
   }
   .hero-text {
     font-size: 100%;
+    text-align: center;
   }
   .hero-text h1 {
     font-size: 1.5rem;
@@ -171,12 +172,14 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    padding: 0;
   }
   .socials li {
+    float: none;
     padding-left: 0;
     padding: 0 5px;
   }
   .socials a {
-    font-size: 1.1em;
+    font-size: 2rem;
   }
 }

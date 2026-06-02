@@ -32,8 +32,8 @@
 /* TABLET TABLET TABLET TABLET */
 
 @media (max-width: 1199px) {
-  .navbar a {
-    font-size: 1.2em;
+  .navbar a i{
+    font-size: 1.2;
   }
 }
 
