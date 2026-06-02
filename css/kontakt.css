@@ -16,24 +16,21 @@
   flex-direction: column;
   gap: 30px;
 }
+.kontakt-socials>.socials{
+  margin-left: -11%;
+}
 .kontakt-text h3{
   font-size: 4rem;
   font-weight: 400;
-
   line-height: 1.1;
-
   margin-bottom: 25px;
 }
 .kontakt-text p{
   color: rgba(255,255,255,0.7);
-
   font-size: 1.1rem;
-
   line-height: 1.8;
-
   max-width: 450px;
 }
-
 .kontakt-container{
   width: 60%;
   display: flex;
@@ -122,6 +119,33 @@ textarea::placeholder{
 .swal2-confirm:hover {
   background-color: rgba(72, 255, 0, 1) !important;
   box-shadow: 0 0 30px rgba(72, 255, 0, 0.8);
+}
+.weather-widget{
+  text-align: center;
+  padding: 12px 14px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba(72,255,0,0.1);
+  -webkit-backdrop-filter
+  : blur( 10px );
+  border-radius: 3px;
+  border: 1px solid rgba(72, 255, 0, 0.349);
+  min-width: 120px;
+  color: white;
+  margin-top: 5%;
+  width: 80%;
+}
+.weather-location{
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+}
+.weather-temp{
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgba(72, 255, 0, 0.9);
 }
 
 /* TABLET TABLET TABLET TABLET */
