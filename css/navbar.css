@@ -45,16 +45,28 @@
     flex-wrap: wrap;
     overflow-y: visible;
     padding: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
   }
   .navbar li {
-    padding: 0.3rem 0.2rem;
-    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    font-size: 0.6;
     flex: 1;
+    min-height: 50px;
   }
   .navbar a {
-    font-size: 0.75em;
+    font-size: 0;
+  }
+  .navbar a i {
+    font-size: 1.2rem;
+  }
+  .navbar li:first-child a {
+    font-size: 1rem;
   }
   .navbar li:first-child {
     flex: 2;
+    margin-left: 2%;
   }
 }
