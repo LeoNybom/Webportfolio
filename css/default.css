@@ -45,6 +45,7 @@ section{
   }
   .sectionheader {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 
@@ -56,5 +57,6 @@ section{
   }
   .sectionheader {
     font-size: 1.8rem;
+    text-align: center;
   }
 }

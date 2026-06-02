@@ -100,6 +100,7 @@
 @media (max-width: 767px) {
   .ommigsection {
     padding: 2rem 5%;
+    text-align: center;
   }
   .ommig-content {
     flex-direction: column;
@@ -107,6 +108,10 @@
     padding: 1rem;
   }
   .ommig-left {
+    width: 100%;
+    align-items: center;
+  }
+  .ommig-left>.button{
     width: 100%;
   }
   .ommig-image {
@@ -132,5 +137,9 @@
   }
   .sectionheader {
     font-size: 1.8rem;
+    text-align: center;
+  }
+  .ommigsection .headerdiv{
+  justify-content: center;
   }
 }
