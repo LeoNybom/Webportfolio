@@ -44,6 +44,7 @@
     height: auto;
     flex-wrap: wrap;
     overflow-y: visible;
+    margin: 0;
     padding: 0;
     bottom: 0;
     left: 0;
@@ -52,12 +53,18 @@
   }
   .navbar li {
     padding: 0.5rem 0;
-    font-size: 0.6;
     flex: 1;
     min-height: 50px;
+    align-items: center;
+    justify-content: center;
   }
   .navbar a {
     font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   .navbar a i {
     font-size: 1.2rem;
