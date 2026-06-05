@@ -109,10 +109,12 @@
   }
   .headerdiv {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
   .sectionheader {
     font-size: 1.6rem;
+    text-align: center;
   }
   .project-button a {
     font-size: 0.9rem;

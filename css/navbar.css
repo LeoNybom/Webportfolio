@@ -53,7 +53,7 @@
     flex: 1;
     min-height: 50px;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
   }
   .navbar a {
     font-size: 0;
