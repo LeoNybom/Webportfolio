@@ -145,6 +145,15 @@ textarea::placeholder{
   font-size: 1.25rem;
   font-weight: 700;
   color: rgba(72, 255, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.weather-temp img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
 }
 
 /* TABLET TABLET TABLET TABLET */
@@ -169,6 +178,9 @@ textarea::placeholder{
 /* MOBILE MOBILE MOBILE MOBILE MOBILE*/
 
 @media (max-width: 767px) {
+  #kontakt{
+    scroll-margin-top: 0;
+  }
   .kontaktsection {
     flex-direction: column;
     gap: 25px;

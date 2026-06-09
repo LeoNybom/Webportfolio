@@ -103,6 +103,9 @@
 /* MOBILE */
 
 @media (max-width: 767px) {
+  #projects{
+    scroll-margin-top: 0;
+  }
   .projectcontainer {
     padding: 2rem 5%;
     gap: 1.5rem;

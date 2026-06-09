@@ -128,7 +128,7 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: 70dvh;
+    min-height: 100vh;
     padding-top: 60px;
   }
   .main-card {

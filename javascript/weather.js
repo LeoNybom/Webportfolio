@@ -2,6 +2,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 const apiKey = "13bc2c57dcb78c2e6a5d1191eb9d5e8a";
 const city = "Stockholm";
 
+
 const updateWeather = () => {
     const weatherInfo = document.getElementById("weatherInfo");
 
@@ -23,10 +24,13 @@ const updateWeather = () => {
     .then((data) => {
         const temperature = Math.round(data.main.temp);
         const location = data.name;
+        const iconCode = data.weather[0].icon;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
-        weatherInfo.innerHTML = `
+        weatherInfo.innerHTML = `            
             <p class="weather-location">${location}</p>
-            <p class="weather-temp">${temperature}°C</p>
+            <p class="weather-temp">${temperature}°C <img src="${iconUrl}" alt="weather-icon"></p>
+            
         `;
     })
     .catch((error) => {
