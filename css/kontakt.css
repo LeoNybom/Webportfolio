@@ -3,17 +3,17 @@
 }
 .kontaktsection{
   min-height: 60vh;
-  padding: 8rem 8%;
+  padding: 8rem 0;
+  width: 80%;
+  margin-left: 10%;
   display: flex;
   flex-direction: row;
   gap: 100px;
-  border-bottom: 2px solid rgba(72,255,0,0.2);
 }
 .kontakt-socials{
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 .kontakt-socials>.socials{
   margin-left: -11%;

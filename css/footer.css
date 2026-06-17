@@ -5,6 +5,7 @@
   justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 50px;
+  border-top: 2px solid rgba(72,255,0,0.2);
 }
 .footer-right{
   display: flex;
