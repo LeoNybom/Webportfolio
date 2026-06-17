@@ -2,11 +2,11 @@
   scroll-margin-top: 3rem;
 }
 .ommigsection{
-  min-height: 70vh;
-  padding: 6rem 5%;
+  min-height: auto;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   border-top: 2px solid rgba(72,255,0,0.2);
   border-bottom: 2px solid rgba(72,255,0,0.2);
   background-color: rgba(0, 71, 0, 0.685);
@@ -16,6 +16,8 @@
   align-items: stretch;
   justify-content: space-between;
   gap: 40px;
+  width: 80%;
+  margin-left: 10%;
   background: rgba(0,0,0,0.35);
   border: 1px solid rgba(72,255,0,0.2);
   border-radius: 12px;
@@ -36,10 +38,12 @@
   justify-content: center;
   gap: 20px;
 }
+.ommigsection .headerdiv{
+  margin-left: 10%;
+}
 .ommig-title{
   color: rgba(72,255,0,0.9);
   font-size: 2rem;
-  margin-left: 10%;
 }
 .ommig-left p{
   font-size: 1.5rem;
