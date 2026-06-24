@@ -78,7 +78,7 @@
                 </div>
                 <div class="cta">
                     <button class="button">
-                        <a href="#projects">Mina projekt &nbsp<i class="fa-solid fa-briefcase"></i></a>
+                        <a href="#kontakt">Kontakt &nbsp<i class="fa-solid fa-envelope"></i></a>
                     </button>
                     <button class="button">
                         <a href="/files/Resumé - Leopold Hedefalk Nybom.pdf" download>Ladda ner CV &nbsp<i class="fa-solid fa-download"></i></a>                        
@@ -273,7 +273,8 @@
                 <input type="hidden" name="_template" value="table"/>
 
                 <div class="input-container">
-                    <div class="input-item">    
+                    <div class="input-item">
+                        <label for="name" hidden>Namn</label>    
                         <input
                         type="text"
                         id="name"
@@ -284,6 +285,7 @@
                         placeholder="Namn (minst två bokstäver)"/>
                     </div>
                     <div class="input-item">
+                        <label for="email" hidden>Email</label>
                         <input
                         type="email"
                         id="email"
@@ -293,6 +295,7 @@
                         placeholder="Email (namn@exempel.com)"/>
                     </div>
                 </div>
+                <label for="meddelande" hidden>Meddelande</label>
                 <textarea name="meddelande" rows="20" cols="50" placeholder="Meddelande"></textarea>
 
                 <button class="button"type="submit">Skicka meddelande &nbsp<i class="fa-solid fa-envelope"></i></button>
