@@ -165,7 +165,6 @@ Alternativt kan projektet köras med exempelvis VS Code och Live Server.
 Webbplatsen är utvecklad med fokus på:
 
 * Desktop
-* Surfplatta
 * Mobiltelefon
 
 Flexbox används genomgående för att skapa flexibla och skalbara layouter.
