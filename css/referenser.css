@@ -9,7 +9,9 @@
   gap: 2rem;
   border-top: 2px solid rgba(72,255,0,0.2);
   border-bottom: 2px solid rgba(72,255,0,0.2);
-  background-color: rgba(0, 71, 0, 0.685);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/images/Portfolio-alternate-bakgrund.png);
+  background-size: cover;
+  background-position: center;
 }
 .referenssection> .sectionheader{
   text-align: center;
@@ -17,7 +19,7 @@
 .slideshow-container {
   position: relative;
   background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(72,255,0,0.2);
+  border: 2px solid rgba(72,255,0,0.2);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   width: 80%;
@@ -26,7 +28,7 @@
   transition: 0.4s ease;
 }
 .slideshow-container:hover {
-  border: 1px solid rgba(72,255,0,0.5);
+  border: 2px solid rgba(72,255,0,0.5);
   box-shadow:
     0 0 20px rgba(72,255,0,0.15),
     0 0 40px rgba(72,255,0,0.08);
