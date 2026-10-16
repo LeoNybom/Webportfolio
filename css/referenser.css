@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 2rem;
   border-bottom: 2px solid rgba(72,255,0,0.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/images/Portfolio-alternate-bakgrund.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/Portfolio-alternate-bakgrund.png);
   background-size: cover;
   background-position: center;
 }
