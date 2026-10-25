@@ -40,9 +40,6 @@
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(72,255,0,0.2);
 }
-.kunskap-category i{
-  margin-right: 0.4rem;
-}
 .skill-list{
   list-style: none;
   margin: 0;
@@ -56,22 +53,14 @@
   align-items: center;
   gap: 1rem;
 }
-.skill > i{
-  font-size: 2.4rem;
-  width: 2.8rem;
+.skill-icon{
+  width: 2.6rem;
+  height: 2.6rem;
   flex-shrink: 0;
-  text-align: center;
+  object-fit: contain;
   transition: 0.3s ease;
 }
-/* Font Awesome-ikoner och GitHub-loggan får sajtens gröna/vita färg */
-.skill > i.fa-solid{
-  font-size: 1.9rem;
-  color: rgba(72,255,0,0.9);
-}
-.skill > i.devicon-github-original{
-  color: white;
-}
-.skill:hover > i{
+.skill:hover .skill-icon{
   transform: scale(1.25);
 }
 .skill-name{
@@ -114,8 +103,9 @@
   .kunskap-category{
     font-size: 1.3rem;
   }
-  .skill > i{
-    font-size: 2rem;
+  .skill-icon{
+    width: 2.2rem;
+    height: 2.2rem;
   }
   .skill-name{
     font-size: 1.1rem;
