@@ -25,6 +25,8 @@
   margin-left: 10%;
   padding: 2rem;
   transition: 0.4s ease;
+  /* Alla slides ligger i samma ruta, så höjden blir alltid den längsta slidens */
+  display: grid;
 }
 .slideshow-container:hover {
   border: 2px solid rgba(72,255,0,0.5);
@@ -33,11 +35,16 @@
     0 0 40px rgba(72,255,0,0.08);
 }
 .mySlides {
-  display: none;
+  grid-area: 1 / 1;
+  align-self: center;
+  visibility: hidden;
   padding: 2rem;
   text-align: center;
   color: white;
   font-size: 1.5rem;
+}
+.mySlides.show-slide {
+  visibility: visible;
 }
 .ref-profile {
   width: 70px;
