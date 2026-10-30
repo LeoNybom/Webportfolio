@@ -234,15 +234,4 @@ body.lightbox-open{
   .git-button {
     margin-left: 0;
   }
-  .lightbox {
-    padding: 1rem;
-  }
-  .lightbox-box {
-    max-width: 95vw;
-    padding: 8px;
-  }
-  .lightbox-close {
-    top: -12px;
-    right: -12px;
-  }
 }
