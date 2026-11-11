@@ -131,8 +131,14 @@
 }
 .lightbox-box{
   position: relative;
-  max-width: min(1100px, 90vw);
-  padding: 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 1rem;
+  width: min(820px, 90vw);
+  height: min(88vh, 820px);
+  overflow-y: auto;
+  padding: 16px;
   background: #0b0f0a;
   border: 1px solid rgba(72,255,0,0.6);
   border-radius: 12px;
@@ -146,22 +152,77 @@
 .lightbox.open .lightbox-box{
   transform: scale(1);
 }
+/* Uppifrån och ner: stor bild, miniatyrer, text. Hela rutan scrollar. */
+.lightbox-box::-webkit-scrollbar{
+  width: 6px;
+}
+.lightbox-box::-webkit-scrollbar-thumb{
+  background: rgba(72,255,0,0.4);
+  border-radius: 3px;
+}
+.lightbox-media{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .lightbox-img{
   display: block;
-  max-width: 100%;
-  max-height: 75vh;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 6px;
 }
+.lightbox-gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.lightbox-gallery img,
+.gallery-placeholder{
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  border: 1px solid rgba(72,255,0,0.25);
+}
+.lightbox-gallery img{
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lightbox-gallery img:hover,
+.lightbox-gallery img.active{
+  border-color: rgba(72,255,0,0.8);
+  box-shadow: 0 0 10px rgba(72,255,0,0.3);
+}
+.gallery-placeholder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-style: dashed;
+  background: rgba(72,255,0,0.04);
+  color: rgba(72,255,0,0.5);
+  font-size: 0.8rem;
+}
+.gallery-placeholder i{
+  font-size: 1.3rem;
+}
 .lightbox-caption{
-  margin-top: 12px;
-  text-align: center;
   font-family: "Electrolize";
+  font-size: 1.5rem;
   color: rgba(72,255,0,0.9);
+}
+.lightbox-details p{
+  margin-top: 1rem;
+  color: rgba(255,255,255,0.75);
 }
 .lightbox-close{
   position: absolute;
-  top: -16px;
-  right: -16px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -212,6 +273,46 @@ body.lightbox-open{
   display: flex;
   align-self: flex-end;
   margin: 0 1rem 1rem;
+}
+
+/* "LÄS MER" + "TILL PROJEKTET" */
+
+.card-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1rem;
+}
+.card-buttons .git-button{
+  margin: 0;
+}
+.readmore-btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Electrolize";
+  font-size: 0.95rem;
+  font-weight: bold;
+  background: rgba(72,255,0,0.85);
+  border: none;
+  border-radius: 20px;
+  color: #0b0f0a;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.readmore-btn i{
+  font-size: 0.8rem;
+}
+.readmore-btn:hover{
+  background: rgba(72,255,0,1);
+  box-shadow: 0 0 14px rgba(72,255,0,0.5);
+}
+
+/* Den långa texten ligger i kortet men visas bara i lightboxen */
+.project-details,
+.project-gallery{
+  display: none;
 }
 .git-button:disabled{
   color: rgba(72,255,0,0.8);
@@ -274,5 +375,22 @@ body.lightbox-open{
   }
   .git-button {
     margin-left: 0;
+  }
+  .lightbox{
+    padding: 1rem;
+  }
+  .lightbox-box{
+    height: 90vh;
+    padding: 12px;
+  }
+  .lightbox-gallery{
+    gap: 6px;
+  }
+  .lightbox-caption{
+    font-size: 1.2rem;
+  }
+  .lightbox-close{
+    top: 8px;
+    right: 8px;
   }
 }

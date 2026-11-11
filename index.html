@@ -120,6 +120,12 @@
                     <h2>DefDiary (Under konstruktion)</h2>
                     <p>Ett hobbyprojekt jag skapat på sidan av mina studier. Projektet består av en plattform som ska underlätta för användaren att nå sina träningsmål.</p>
                 </div>
+                <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
+                <div class="project-gallery">
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 3</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 4</span>
+                </div>
                 <div class="project-category">
                     <i>C#</i>
                     <i>HTML</i>
@@ -129,30 +135,87 @@
                     <i>SQL Server</i>
                     <i>Razor pages</i>
                 </div>
-                <button class="project-button git-button" type="button" disabled>Till projektet <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="card-buttons">
+                    <button class="readmore-btn" type="button">Läs mer <i class="fa-solid fa-expand"></i></button>
+                    <button class="project-button git-button" type="button" disabled>Till projektet <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="projectitem" data-category="claude">
+                <img class="default-img" src="./images/Agentic-os-example1.png" alt="projekt2"> 
+                <div class="project-content">
+                    <h2>Agentic OS</h2>
+                    <p>LEO·OS är mitt eget “agentic OS”, eller med andra ord en personlig AI-dashboard byggt ovanpå Claude Code. 
+                        Det håller koll på studier, kodprojekt och vardag åt mig, så att jag inte missar deadlines eller viktiga mejl.</p>
+                </div>
+                <!-- Längre beskrivning: syns bara i "Läs mer"-vyn -->
+                <div class="project-details">
+                    <p>Systemet körs dygnet runt på en Linux-laptop och nås från datorn och mobilen via Tailscale.
+                        En schemaläggare startar AI-rutiner på bestämda tider. Rutinerna skriver en morgonbrief med kalender och deadlines,
+                        sorterar inkommande mejl och skriver svarsutkast, sorterar kursmaterial till rätt kurs och gör en veckoplan.</p>
+                    <p>Varje fredag analyserar en rutin veckan och föreslår nya automationer.
+                        Resultaten visas i en egen webbdashboard och skickas som notiser till Discord.
+                        Allt minne lagras som vanliga textfiler i Git och kan redigeras i Obsidian.</p>
+                    <p>Dashboarden läser bara filer och kostar därför inga tokens.
+                        AI:n används bara när jag klickar på något eller när en rutin körs. Varje rutin har en fast modell och ett kostnadstak.
+                        Systemet skickar, raderar och köper aldrig något på egen hand: mejl blir utkast och kalendern läses men ändras aldrig.</p>
+                </div>
+                <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
+                <div class="project-gallery">
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 3</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 4</span>
+                </div>
+                <div class="project-category">
+                    <i>Claude code</i>
+                    <i>Obsidian</i>
+                    <i>Tailscale</i>
+                    <i>Syncthing</i>
+                </div>
+                <div class="card-buttons">
+                    <button class="readmore-btn" type="button">Läs mer <i class="fa-solid fa-expand"></i></button>
+                    <button class="project-button git-button"><a href="https://leonybom.github.io/Bajen-Zoo/" target="_blank">Till projektet <i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
             </div>
             <div class="projectitem" data-category="skola">
-                <img class="default-img" src="./images/bajen-zoo-exempel.png" alt="projekt2"> 
+                <img class="default-img" src="./images/bajen-zoo-exempel.png" alt="projekt3"> 
                 <div class="project-content">
                     <h2>Bajen Zoo</h2>
                     <p>Mitt första HTML-skolprojekt som fokuserar på responsiv design. Projektet bygger på att skapa en interaktiv hemsida för ett fiktivt zoo.</p>
                 </div>               
+                <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
+                <div class="project-gallery">
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 3</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 4</span>
+                </div>
                 <div class="project-category">
                     <i>HTML</i>
                     <i>CSS</i>
                 </div>
-                <button class="project-button git-button"><a href="https://leonybom.github.io/Bajen-Zoo/" target="_blank">Till projektet <i class="fa-solid fa-arrow-right"></i></a></button>
+                <div class="card-buttons">
+                    <button class="readmore-btn" type="button">Läs mer <i class="fa-solid fa-expand"></i></button>
+                    <button class="project-button git-button"><a href="https://leonybom.github.io/Bajen-Zoo/" target="_blank">Till projektet <i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
             </div>
             <div class="projectitem" data-category="claude">
-                <img src="./images/claude-mods-thumbnail.png" alt="projekt3">
+                <img src="./images/claude-mods-thumbnail.png" alt="projekt4">
                 <div class="project-content">
                     <h2>Claude Mods</h2>
                     <p>Tillsammans med Claude och en klasskamrat har vi tagit fram en samling av mods för Claude Code. Syftet är att förenkla användningen av Claude och förbättra gränssnittet visuellt.</p>
                 </div>
+                <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
+                <div class="project-gallery">
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 3</span>
+                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 4</span>
+                </div>
                 <div class="project-category">
                     <i>Claude Code</i>
                 </div>
-                <button class="project-button git-button"><a href="https://github.com/LeoNybom/claude-mods" target="_blank">Till projektet <i class="fa-solid fa-arrow-right"></i></a></button>
+                <div class="card-buttons">
+                    <button class="readmore-btn" type="button">Läs mer <i class="fa-solid fa-expand"></i></button>
+                    <button class="project-button git-button"><a href="https://github.com/LeoNybom/claude-mods" target="_blank">Till projektet <i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
             </div>
         </div>
     </div>
@@ -458,10 +521,16 @@
 
     <!-- POPUP FÖR PROJEKTBILDER -->
     <div class="lightbox" id="lightbox" aria-hidden="true">
-        <div class="lightbox-box" role="dialog" aria-modal="true" aria-label="Förstorad projektbild">
-            <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Stäng bild"><i class="fa-solid fa-xmark"></i></button>
-            <img class="lightbox-img" id="lightbox-img" src="" alt="">
-            <p class="lightbox-caption" id="lightbox-caption"></p>
+        <div class="lightbox-box" role="dialog" aria-modal="true" aria-label="Projektdetaljer">
+            <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Stäng"><i class="fa-solid fa-xmark"></i></button>
+            <div class="lightbox-media">
+                <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                <div class="lightbox-gallery" id="lightbox-gallery"></div>
+            </div>
+            <div class="lightbox-text">
+                <p class="lightbox-caption" id="lightbox-caption"></p>
+                <div class="lightbox-details" id="lightbox-details"></div>
+            </div>
         </div>
     </div>
 
