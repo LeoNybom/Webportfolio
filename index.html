@@ -120,6 +120,26 @@
                     <h2>DefDiary (Under konstruktion)</h2>
                     <p>Ett hobbyprojekt jag skapat på sidan av mina studier. Projektet består av en plattform som ska underlätta för användaren att nå sina träningsmål.</p>
                 </div>
+                <div class="project-details">
+                    <p>
+                        DefDiary är en träningsdagbok på webben som hjälper mig att hålla rutinerna under en "deff". 
+                        Idén är enkel: man vet oftast vad man borde göra, men det är svårt att göra det varje dag. 
+                        Därför följer DefDiary upp om jag faktiskt gör det jag har bestämt.
+                    </p>
+                    <p>
+                        Först sätter jag mina dagliga mål för kalorier, steg och vatten. 
+                        Varje dag fyller jag sedan i en snabb checklista: blev det styrkepass och kondition, hur många kalorier och steg blev det, 
+                        nådde jag vattenmålet och hur mådde jag. Dashboarden samlar svaren i en veckoöversikt med vikttrend, 
+                        dagens vanor, personliga rekord och senaste aktivitet. Med kalendern kan jag se tillbaka på tidigare dagar.
+                    </p>
+                    <p>
+                        Tekniskt är DefDiary en ASP.NET Core Razor Pages-app på .NET 10. 
+                        Den lagrar data i SQL Server via Entity Framework Core, och logiken ligger i separata repository- och service-lager. 
+                        Inloggningen sköts av ASP.NET Core Identity med säkra cookies. Ett konto låses tillfälligt efter fem misslyckade inloggningsförsök. 
+                        Databasen migreras automatiskt när appen startar, och ett eget middleware kan sätta sajten i underhållsläge med en enda inställning. 
+                        Appen körs på Azure App Service.
+                    </p>
+                </div>
                 <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
                 <div class="project-gallery">
                     <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
@@ -157,9 +177,9 @@
                 </div>
                 <!-- Extra bilder i "Läs mer"-vyn: byt en placeholder mot <img src="..." alt="..."> -->
                 <div class="project-gallery">
-                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 2</span>
-                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 3</span>
-                    <span class="gallery-placeholder"><i class="fa-regular fa-image"></i>Bild 4</span>
+                    <img src="./images/Agentic-os-example2.png" alt="Agentic OS – rutiner">
+                    <img src="./images/Agentic-os-example3.png" alt="Agentic OS – minne">
+                    <img src="./images/Agentic-os-example4.png" alt="Agentic OS – inställningar">
                 </div>
                 <div class="project-category">
                     <i>Claude code</i>
