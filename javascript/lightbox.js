@@ -43,17 +43,12 @@ function closeLightbox() {
   document.body.classList.remove("lightbox-open");
 }
 
-// Både bilden och "Läs mer"-knappen öppnar samma vy
-document.querySelectorAll(".projectitem").forEach(function (card) {
-  card.querySelector("img").addEventListener("click", function () {
+// Både bilden och "Läs mer"-knappen öppnar samma vy.
+// Lyssnar på hela sidan så att det även fungerar på karusellens kopior av korten.
+document.addEventListener("click", function (event) {
+  const card = event.target.closest(".projectitem");
+  if (card && (event.target.closest("img") || event.target.closest(".readmore-btn"))) {
     openLightbox(card);
-  });
-
-  const readMore = card.querySelector(".readmore-btn");
-  if (readMore) {
-    readMore.addEventListener("click", function () {
-      openLightbox(card);
-    });
   }
 });
 
