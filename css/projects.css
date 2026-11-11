@@ -15,6 +15,43 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+/* FILTERKNAPPAR */
+
+.header-actions{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.filter-buttons{
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(72,255,0,0.3);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.35);
+}
+.filter-btn{
+  font-family: "Electrolize";
+  font-size: 0.95rem;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.7);
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn:hover{
+  color: rgba(72,255,0,0.9);
+}
+.filter-btn.active{
+  background: rgba(72,255,0,0.15);
+  color: rgba(72,255,0,1);
+  box-shadow: 0 0 10px rgba(72,255,0,0.2);
+}
+.projectitem.hidden{
+  display: none;
+}
 .project-card{
   display: flex;
   justify-content: center;
@@ -196,6 +233,10 @@ body.lightbox-open{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+  .header-actions {
+    flex-direction: column;
+    gap: 0.8rem;
   }
   .sectionheader {
     font-size: 1.6rem;
